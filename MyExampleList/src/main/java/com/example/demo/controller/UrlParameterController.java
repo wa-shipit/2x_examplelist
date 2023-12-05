@@ -42,7 +42,7 @@ public class UrlParameterController {
 	 * 
 	 * 尚、受け取る際の変数名は「paramvar」とする事
 	 */
-	//	@RequestMapping(path = "/urlparam/{}", method = RequestMethod.GET)
+	//	@RequestMapping(path = "/urlparamenshu/{}", method = RequestMethod.GET)
 	//	public String enshu() {
 	//
 	//		if() {

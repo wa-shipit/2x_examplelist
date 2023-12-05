@@ -18,23 +18,43 @@ public class HttpSessionOuyouController {
 	@RequestMapping(path = "/sessionouyoua", method = RequestMethod.POST)
 	public String ap(String ouyoua, HttpSession session) {
 
+		/*
+		 * <演習問題①>
+		 * 画面から入力された変数「ouyoua」を
+		 * セッションに「sessionpara」という名前で保存する。
+		 */
 		return "sessionouyoub";
 	}
 
 	@RequestMapping(path = "/sessionouyoub", method = RequestMethod.POST)
 	public String bp(String ouyoub, HttpSession session) {
-
+		/*
+		 * <演習問題②>
+		 * セッションから演習問題①で保存した値を取り出し、
+		 * 画面から入力された変数「ouyoub」と結合した上で
+		 * セッションに「sessionpara」という名前で保存する。
+		 */
 		return "sessionouyouc";
 	}
 
 	@RequestMapping(path = "/sessionouyouc", method = RequestMethod.POST)
 	public String cp(String ouyouc, HttpSession session) {
-
+		/*
+		 * <演習問題③>
+		 * セッションから演習問題②で保存した値を取り出し、
+		 * 画面から入力された変数「ouyouc」と結合した上で
+		 * セッションに「sessionpara」という名前で保存する。
+		 */
 		return "sessionouyoud";
 	}
 
 	@RequestMapping(path = "/sessionouyoud", method = RequestMethod.GET)
 	public String d(HttpSession session) {
+
+		/*
+		 * <演習問題④>
+		 * セッションから演習問題③で保存した値を削除しなさい。
+		 */
 
 		return "sessionouyoud";
 	}
