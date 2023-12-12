@@ -1,5 +1,7 @@
 package com.example.demo.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -9,6 +11,9 @@ import jakarta.servlet.http.HttpSession;
 
 @Controller
 public class MicroController {
+
+	@Autowired
+	JdbcTemplate jdbcTemplate;
 
 	@RequestMapping(path = "/microhome", method = RequestMethod.GET)
 	public String mhg() {
@@ -92,6 +97,23 @@ public class MicroController {
 	//		
 	//		//画面表示
 	//		return "result";
+	//	}
+
+	/*
+	 * 追加仕様用
+	 */
+	//	@RequestMapping(path = "/question/save", method = RequestMethod.GET)
+	//	public String qs(???????) {
+	//
+	//		//sessionから必要な情報を取り出す。
+	//		//変数「x」にはユーザ名、変数「y」には死んだ結果を取り出す。
+	//		String x = session.getAttribute("?????");
+	//		String y = session.getAttribute("?????");
+	//		
+	//		//DBに登録する。
+	//		jdbcTemplate.update("INSERT文　がんばれ～");
+	//		
+	//		return "redirect:/microhome";
 	//	}
 
 }
