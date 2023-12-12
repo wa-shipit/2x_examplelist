@@ -48,7 +48,7 @@ public class MicroController {
 	//	 * 質問②用
 	//	 */
 	//	@RequestMapping(path = "/q1/q2/{choice}", method = RequestMethod.GET)
-	//	public String qg(???????, HttpSession session) {
+	//	public String q2g(???????, HttpSession session) {
 	//
 	//		//2問目の回答をセッションに格納する。
 	//		session.setAttribute("????", );
@@ -59,7 +59,7 @@ public class MicroController {
 	//	 * 質問③用
 	//	 */
 	//	@RequestMapping(path = "/q1/q2/q3/{}", method = RequestMethod.GET)
-	//	public String qg(???????, HttpSession session) {
+	//	public String q3g(???????, HttpSession session) {
 	//
 	//		//3問目の回答をセッションに格納する。
 	//		session.setAttribute("????", );
@@ -70,7 +70,7 @@ public class MicroController {
 	//	 * 質問④用
 	//	 */
 	//	@RequestMapping(path = "/q1/q2/q3/q4/{}", method = RequestMethod.GET)
-	//	public String qg(???????, HttpSession session) {
+	//	public String q4g(???????, HttpSession session) {
 	//
 	//		//1～3問目の回答をセッションから取り出して、変数「x」「y」「z」に格納する。
 	//		String x = (String) session.getAttribute("?????");
