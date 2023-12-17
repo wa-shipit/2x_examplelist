@@ -11,23 +11,23 @@ public class Micro2ndDataController {
 	@RequestMapping(path = "/receive/{param1}", method = RequestMethod.GET)
 	public String first(@PathVariable String param1) {
 
-		return "あなたは" + param1 + "って打ったね？";
+		return "あなたは前回" + param1 + "って打ったね";
 	}
 
 	/*
 	 * 演習問題用
 	 */
-	//	@RequestMapping(path = "/receive/{????}", method = RequestMethod.GET)
-	//	public String first(????) {
+	//	@RequestMapping(path = "/receiveenshu/{?????}/{????}", method = RequestMethod.GET)
+	//	public String en(@PathVariable String ?????, @PathVariable String ????) {
 	//
-	//		return "";
+	//		return paramEnshu1 + paramEnshu2;
 	//	}
 
 	/*
 	 * 応用問題用
 	 */
-	//	@RequestMapping(path = "/receive/{????}", method = RequestMethod.GET)
-	//	public String first(????) {
+	//	@RequestMapping(path = "/receiveouyou/?????", method = RequestMethod.GET)
+	//	public String ou(????) {
 	//
 	//		return "";
 	//	}

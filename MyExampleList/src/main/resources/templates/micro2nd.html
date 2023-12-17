@@ -30,7 +30,7 @@
 	<div class="row" style="height: 60vh">
 		<div class="col-6">
 			<h2>なんか打って</h2>
-			<input type="text" id="example1" oninput="first()" style="height: 75px;" class="form-control" />
+			<input type="text" id="example1" oninput="first()"  style="height: 75px;" class="form-control" />
 		</div>
 		<div class="col-6">
 			<h2>通信結果！</h2>
@@ -44,7 +44,7 @@
 			var inputData = document.getElementById("example1").value;
 			try {
 				//通信を行い、変数「reponse」にその結果を格納
-				const response = await fetch('http://localhost:8080/receive/' + inputData);
+				const response = await fetch('http://localhost:8080/receive/' + inputData );
 
 				//通信結果を文字列として扱うための変換
 				const text = await response.text();
@@ -58,39 +58,41 @@
 		///////////ここまでがひとかたまり/////////////
 		
 		
-		///////////////////演習問題/////////////////
-		async function enshu() {
-			try {
-				//通信を行い、変数「reponse」にその結果を格納
-				const response = await fetch('http://localhost:8080/????/');
+		///////////////////演習問題(61行目から77行目までコメントを外す)/////////////////
+		//async function enshu() {
+		//入力欄の内容を取得
+		//通信を開始
+		//	try {
+		//		//通信を行い、変数「reponse」にその結果を格納
+		//		const response = await fetch('http://localhost:8080/receiveenshu/' + ???? + '/' + ????);
 
 				//通信結果を文字列として扱うための変換
-				const text = await response.text();
+		//		const text = await response.text();
 
 				//通信結果の欄に表示する。
-				document.getElementById("result").innerHTML  = text;
-			} catch (error) {
-				console.error('Error:', error);
-			}
-		}
+		//		document.getElementById("result").innerHTML  = text;
+		//	} catch (error) {
+		//		console.error('Error:', error);
+		//	}
+		//}
 		///////////////////////////////////////////////
 		
 		
-		///////////////////応用問題/////////////////
-		async function ouyou() {
-			try {
+		///////////////////応用問題(コメント外してね)/////////////////
+		//async function ouyou() {
+		//	try {
 				//通信を行い、変数「reponse」にその結果を格納
-				const response = await fetch('http://localhost:8080/????/');
+		//		const response = await fetch('http://localhost:8080/????/');
 
 				//通信結果を文字列として扱うための変換
-				const text = await response.text();
+		//		const text = await response.text();
 
 				//通信結果の欄に表示する。
-				document.getElementById("result").innerHTML  = text;
-			} catch (error) {
-				console.error('Error:', error);
-			}
-		}
+		//		document.getElementById("result").innerHTML  = text;
+		//	} catch (error) {
+		//		console.error('Error:', error);
+		//	}
+		//}
 		////////////////////////////////////////////
 	</script>
 </body>
